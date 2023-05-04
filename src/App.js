@@ -4,6 +4,7 @@ import styles from "./index.css";
 import Home from "./Home";
 import CreateUser from "./CreateUser";
 import UserManage from "./UserManage";
+import RegCode from "./RegCode";
 function App() {
   return (
     <Router>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<UserManage />} />
         <Route path="/user/create" element={<CreateUser />} />
+        <Route path="/registration-code" element={<RegCode />} />
       </Routes>
     </Router>
   );

@@ -9,7 +9,7 @@ const UserManage = () => {
         content={
           <div className="container max-w p-5 flex flex-col bg-white rounded-lg">
             <div className="flex justify-between px-5">
-              <p className="font-semibold text-2xl">Manage User</p>
+              <p className="font-semibold text-l lg:text-xl">Manage User</p>
               <Link to="./create" className="btn btn-sm btn-gray-500">Create User</Link>
             </div>
             <div className="divider"></div>
