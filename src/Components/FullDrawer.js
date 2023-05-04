@@ -8,12 +8,12 @@ function FullDrawer({ content }) {
     <div>
       <div className="drawer drawer-mobile">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col justify-start">
+        <div className="drawer-content flex flex-col justify-start bg-gray-100">
           {/* Start of navbar */}
           <Navbar />
           {/* Start of breadcrumbs */}
           <Breadcrumbs />
-          <section className="flex flex-col p-5 bg-gray-100 h-screen">{content}</section>
+          <section className="flex flex-col p-5 bg-gray-100">{content}</section>
         </div>
         <Sidebar />
       </div>

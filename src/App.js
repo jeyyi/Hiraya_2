@@ -1,13 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./Login"
-import styles from "./index.css"
-import Home from "./Home"
+import Login from "./Login";
+import styles from "./index.css";
+import Home from "./Home";
+import CreateUser from "./CreateUser";
+import UserManage from "./UserManage";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path = "/" element = {<Login />} />
-        <Route path = "/home" element = {<Home/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/user" element={<UserManage />} />
+        <Route path="/user/create" element={<CreateUser />} />
       </Routes>
     </Router>
   );
