@@ -66,7 +66,7 @@ function Sidebar() {
                   clipRule="evenodd"
                 />
               </svg>
-              <a href="/">Registration Code</a>
+              <a href="/registration-code">Registration Code</a>
             </div>
           </li>
           <li>
@@ -83,7 +83,7 @@ function Sidebar() {
                   clipRule="evenodd"
                 />
               </svg>
-              <a href="/">Arenas</a>
+              <a href="/arena">Arenas</a>
             </div>
           </li>
           <li>

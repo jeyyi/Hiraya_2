@@ -5,6 +5,8 @@ import Home from "./Home";
 import CreateUser from "./CreateUser";
 import UserManage from "./UserManage";
 import RegCode from "./RegCode";
+import Arena from "./Arena";
+import CreateArena from "./CreateArena";
 function App() {
   return (
     <Router>
@@ -13,6 +15,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<UserManage />} />
         <Route path="/user/create" element={<CreateUser />} />
+        <Route path="/arena" element={<Arena />} />
+        <Route path="/arena/create" element={<CreateArena />} />
         <Route path="/registration-code" element={<RegCode />} />
       </Routes>
     </Router>
