@@ -2,7 +2,7 @@ import React from 'react'
 
 function Breadcrumbs() {
   return (
-    <div className="text-sm breadcrumbs px-4">
+    <div className="text-sm breadcrumbs px-4 py-5">
             <ul>
               <li>
                 <a href='/'>

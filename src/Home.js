@@ -7,7 +7,7 @@ function Home() {
       <FullDrawer
         content={
           <>
-            <div className="text-4xl md:w-1/4 font-extralight">
+            <div className="text-xl md:text-4xl md:w-1/4 font-extralight py-5">
               Monitor all the activities of your website
             </div>
             <div className="text-sm font-thin ">

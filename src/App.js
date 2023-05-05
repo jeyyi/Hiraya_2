@@ -7,6 +7,7 @@ import UserManage from "./UserManage";
 import RegCode from "./RegCode";
 import Arena from "./Arena";
 import CreateArena from "./CreateArena";
+import BattleHistory from "./BattleHistory";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/arena" element={<Arena />} />
         <Route path="/arena/create" element={<CreateArena />} />
         <Route path="/registration-code" element={<RegCode />} />
+        <Route path="/history" element={<BattleHistory />} />
       </Routes>
     </Router>
   );
