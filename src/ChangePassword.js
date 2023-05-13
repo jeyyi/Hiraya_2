@@ -1,6 +1,6 @@
 import React from "react";
 import FullDrawer from "./Components/FullDrawer";
-function CreateArena() {
+function ChangePassword() {
   return (
     <FullDrawer
       content={
@@ -10,31 +10,32 @@ function CreateArena() {
               <div className="form-control">
                 {" "}
                 <label className="label">
-                  Name
+                  Old Password
                   <input
-                    type="text"
+                    type="password"
                     className="input"
-                    placeholder="Enter arena name"
+                    placeholder="Enter old password"
                   />
                 </label>
               </div>
               <div className="form-control">
                 <label className="label">
-                  Stream URL
+                  New Password
                   <input
-                    type="text"
+                    type="password"
                     className="input"
-                    placeholder="Enter URL"
+                    placeholder="Enter new password"
                   />
                 </label>
               </div>
               <div className="form-control">
                 <label className="label">
-                  Select Status
-                  <select className="select">
-                    <option value="admin">Active</option>
-                    <option value="manager">Inactive</option>
-                  </select>
+                  Confirm New Password
+                  <input
+                    type="password"
+                    className="input"
+                    placeholder="Confirm new password"
+                  />
                 </label>
               </div>
               <button className="btn btn-gray-400 w-full mt-4">
@@ -48,4 +49,4 @@ function CreateArena() {
   );
 }
 
-export default CreateArena;
+export default ChangePassword;

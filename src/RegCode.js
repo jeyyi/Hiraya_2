@@ -16,7 +16,7 @@ function RegCode() {
           />
           <div className="modal-action">
             <label htmlFor="my-modal" className="btn bg-red-500 border-0">
-              Cancel!
+              Cancel
             </label>
             <button htmlFor="my-modal" className="btn bg-green-400 border-0 text-gray-800">
               Submit
@@ -51,7 +51,7 @@ function RegCode() {
                   {/* row 1 */}
                   <tr>
                     <td>
-                      https://th2023.live/register?registration_code=rwssybwwxdsloh3k7dhb8byrmrhtco1c
+                      https://hirayav2.live/register?registration_code=rwssybwwxdsloh3k7dhb8byrmrhtco1c
                     </td>
                     <td>1000</td>
                     <td>897</td>

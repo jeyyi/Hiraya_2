@@ -8,6 +8,12 @@ import RegCode from "./RegCode";
 import Arena from "./Arena";
 import CreateArena from "./CreateArena";
 import BattleHistory from "./BattleHistory";
+import ViewBattle from "./ViewBattle";
+import Transaction from "./Transaction";
+import CashIn from "./CashIn";
+import CashOut from "./CashOut";
+import ChangePassword from "./ChangePassword";
+import TailwindTutorial from "./TailwindTutorial";
 function App() {
   return (
     <Router>
@@ -20,6 +26,12 @@ function App() {
         <Route path="/arena/create" element={<CreateArena />} />
         <Route path="/registration-code" element={<RegCode />} />
         <Route path="/history" element={<BattleHistory />} />
+        <Route path="/history/view" element={<ViewBattle />} />
+        <Route path="/transaction" element={<Transaction />} />
+        <Route path = "/cash-in" element = {<CashIn/>}/>
+        <Route path = "/cash-out" element = {<CashOut/>}/>
+        <Route path = "change-password" element={<ChangePassword/>}/>
+        <Route path = "/tutorial" element ={<TailwindTutorial/>}/>
       </Routes>
     </Router>
   );

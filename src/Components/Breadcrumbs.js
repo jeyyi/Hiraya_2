@@ -1,6 +1,10 @@
 import React from 'react'
+import {Link, useLocation} from 'react-router-dom';
+
 
 function Breadcrumbs() {
+  const location = useLocation()
+  const pathnames = location.pathname.split('/').filter((x) => x)
   return (
     <div className="text-sm breadcrumbs px-4 py-5">
             <ul>
@@ -22,7 +26,25 @@ function Breadcrumbs() {
                   Home
                 </a>
               </li>
-              <li>
+              {
+                pathnames.map((name, index)=> {
+                  const routeTo = `/${pathnames.slice(0, index+1).join('/')}`
+                  const displayName = name.charAt(0).toUpperCase() + name.slice(1);
+                  const isLast = index === pathnames.length -1 
+                  return (
+                    <li key = {routeTo}>
+                      {
+                        isLast ? (
+                          <span>{displayName}</span>
+                        ) : (
+                          <Link to= {routeTo}>{displayName}</Link>
+                        )
+                      }
+                    </li>
+                  )
+                })
+              }
+              {/* <li>
                 <a href='/'>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +61,7 @@ function Breadcrumbs() {
                   </svg>
                   Dashboard
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
   )
