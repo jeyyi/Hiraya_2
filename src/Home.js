@@ -4,11 +4,63 @@ import FullDrawer from "./Components/FullDrawer";
 function Home() {
   return (
     <>
+      <input type="checkbox" id="my_modal" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+          <h3 className="flex font-bold text-xl text-green-800">
+            Success
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg>
+            </span>
+          </h3>
+          <p className="py-4">Copied referral link to the clipboard</p>
+          <div className="modal-action">
+            <label htmlFor="my_modal" className="btn">
+              Close!
+            </label>
+          </div>
+        </div>
+      </div>
       <FullDrawer
         content={
           <>
-            <div className="text-xl md:text-4xl md:w-1/4 font-extralight py-5">
-              Monitor all the activities of your website
+            <div className="flex py-5 items-center gap-4">
+              <h3 className="text-xl w-1/6">Referral Code:</h3>
+              <label
+                className="flex bg-gray-400 w-full text-md lg:text-xl justify-between px-5 py-2 rounded-lg cursor-pointer"
+                htmlFor="my_modal"
+              >
+                <h3>https://hiraya.live/register?refID=7570</h3>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z"
+                    />
+                  </svg>
+                </span>
+              </label>
             </div>
             <div className="text-sm font-thin ">
               See how many users are online, accounts activated and all pending
@@ -75,7 +127,7 @@ function Home() {
             {/* 2nd section*/}
             <section className="flex flex-col lg:flex-row gap-2 justify-between py-5">
               {/* Start of wallet Cards */}
-            {/*   <div className="flex flex-col gap-2 w-full">
+              {/*   <div className="flex flex-col gap-2 w-full">
                 <div className="stats shadow w-full">
                   <div className="stat">
                     <div className="stat-title">Total Page Views</div>
