@@ -85,7 +85,7 @@ function Login() {
                   ? `btn loading w-full max-w-xs`
                   : `btn btn-active w-full max-w-xs`
               }
-              href = "/"
+              href = "/home"
             >
               {isActive ? `loading` : `login`}
             </a>
@@ -122,16 +122,16 @@ function Login() {
               className="input input-bordered w-full max-w-xs"
             />
           </div>
-          <buton
+          <a
             className={
               isActive
                 ? `btn loading w-full max-w-xs`
                 : `btn btn-active w-full max-w-xs`
             }
-            onClick={setActive}
+            href ="/home"
           >
             {isActive ? `loading` : `login`}
-          </buton>
+          </a>
           <div className="divider text-gray-300 text-md pt-5">or</div>
           {/* The button to open modal */}
           <label htmlFor="my-modal" className="link text-gray-400 text-md">
