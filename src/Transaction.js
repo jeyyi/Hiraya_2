@@ -13,29 +13,31 @@ function Transaction() {
               </p>
             </div>
             <div className="divider"></div>
-            <div className="flex justify-between px-5 py-2 gap-2">
+            <div className="flex flex-col lg:flex-row justify-between px-5 py-2 gap-2">
               <div className="flex flex-col justify-start w-full gap-2 lg:flex-row">
                 <input
                   type="text"
                   placeholder="Search(Name).."
                   className="input input-bordered w-full max-w-xs"
                 />
-                <select className="select select-bordered w-full max-w-xs">
-                  <option disabled selected>
-                    Select Status
-                  </option>
-                  <option>Pending</option>
-                  <option>Cancelled</option>
-                  <option>Complete</option>
-                </select>
-                <select className="select select-bordered w-full max-w-xs">
-                  <option disabled>For</option>
-                  <option>Request</option>
-                  <option>Direct</option>
-                </select>
+                <div className="flex gap-1">
+                  <select className="select select-bordered w-1/2 lg:w-full max-w-xs">
+                    <option disabled selected>
+                      Select Status
+                    </option>
+                    <option>Pending</option>
+                    <option>Cancelled</option>
+                    <option>Complete</option>
+                  </select>
+                  <select className="select select-bordered w-1/2 lg:w-full max-w-xs">
+                    <option disabled>For</option>
+                    <option>Request</option>
+                    <option>Direct</option>
+                  </select>
+                </div>
               </div>
 
-              <button className="btn h-full max-w-sm bg-blue-500 border-0">
+              <button className="btn max-w-sm bg-blue-500 border-0">
                 Apply Filter
               </button>
             </div>
