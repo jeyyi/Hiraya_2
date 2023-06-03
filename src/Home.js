@@ -75,7 +75,7 @@ function Home() {
             {/* 2nd section*/}
             <section className="flex flex-col lg:flex-row gap-2 justify-between py-5">
               {/* Start of wallet Cards */}
-              <div className="flex flex-col gap-2 w-full">
+            {/*   <div className="flex flex-col gap-2 w-full">
                 <div className="stats shadow w-full">
                   <div className="stat">
                     <div className="stat-title">Total Page Views</div>
@@ -97,9 +97,9 @@ function Home() {
                     <div className="stat-desc">21% more than last month</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* 2nd section of wallets */}
-              <div className="flex flex-col gap-2 w-full">
+              {/* <div className="flex flex-col gap-2 w-full">
                 <div className="stats shadow w-full">
                   <div className="stat">
                     <div className="stat-title">Total Page Views</div>
@@ -128,7 +128,7 @@ function Home() {
                     <div className="stat-value">89,400</div>
                     <div className="stat-desc">21% more than last month</div>
                   </div>
-                </div>
+                </div> */}
             </section>
           </>
         }

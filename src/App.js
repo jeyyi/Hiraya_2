@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import styles from "./index.css";
@@ -13,13 +14,12 @@ import Transaction from "./Transaction";
 import CashIn from "./CashIn";
 import CashOut from "./CashOut";
 import ChangePassword from "./ChangePassword";
-import TailwindTutorial from "./TailwindTutorial";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/user" element={<UserManage />} />
         <Route path="/user/create" element={<CreateUser />} />
         <Route path="/arena" element={<Arena />} />
@@ -28,10 +28,9 @@ function App() {
         <Route path="/history" element={<BattleHistory />} />
         <Route path="/history/view" element={<ViewBattle />} />
         <Route path="/transaction" element={<Transaction />} />
-        <Route path = "/cash-in" element = {<CashIn/>}/>
-        <Route path = "/cash-out" element = {<CashOut/>}/>
-        <Route path = "change-password" element={<ChangePassword/>}/>
-        <Route path = "/tutorial" element ={<TailwindTutorial/>}/>
+        <Route path="/cash-in" element={<CashIn />} />
+        <Route path="/cash-out" element={<CashOut />} />
+        <Route path="change-password" element={<ChangePassword />} />
       </Routes>
     </Router>
   );

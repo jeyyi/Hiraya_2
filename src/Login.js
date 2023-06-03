@@ -79,16 +79,16 @@ function Login() {
             </div>
             {/* Wrong password pop-up */}
             <p className="text-red-500 hidden">Wrong Username or Password</p>
-            <button
+            <a
               className={
                 isActive
                   ? `btn loading w-full max-w-xs`
                   : `btn btn-active w-full max-w-xs`
               }
-              onClick={setActive}
+              href = "/"
             >
               {isActive ? `loading` : `login`}
-            </button>
+            </a>
             <div className="divider text-gray-300 text-md pt-5">or</div>
             {/* The button to open modal */}
             <label htmlFor="my-modal" className="link text-gray-400 text-md">
