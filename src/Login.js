@@ -85,7 +85,7 @@ function Login() {
                   ? `btn loading w-full max-w-xs`
                   : `btn btn-active w-full max-w-xs`
               }
-              href = "/home"
+              href = "/"
             >
               {isActive ? `loading` : `login`}
             </a>
@@ -128,7 +128,7 @@ function Login() {
                 ? `btn loading w-full max-w-xs`
                 : `btn btn-active w-full max-w-xs`
             }
-            href ="/home"
+            href ="/"
           >
             {isActive ? `loading` : `login`}
           </a>
