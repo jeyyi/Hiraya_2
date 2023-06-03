@@ -37,8 +37,8 @@ function Home() {
       <FullDrawer
         content={
           <>
-            <div className="flex py-5 items-center gap-4">
-              <h3 className="text-xl w-1/6">Referral Code:</h3>
+            <div className="flex flex-col lg:flex-row py-5 gap-4">
+              <h3 className="text-xl w-full lg:w-1/6">Referral Code:</h3>
               <label
                 className="flex bg-gray-400 w-full text-md lg:text-xl justify-between px-5 py-2 rounded-lg cursor-pointer"
                 htmlFor="my_modal"
