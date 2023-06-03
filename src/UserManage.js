@@ -13,7 +13,7 @@ const UserManage = () => {
               <Link to="./create" className="btn btn-sm btn-gray-500">Create User</Link>
             </div>
             <div className="divider"></div>
-            <div className="flex justify-between px-5 py-2 gap-2">
+            <div className="flex flex-col lg:flex-row justify-between px-5 py-2 gap-2">
               <div className="flex flex-col justify-start w-full gap-2 lg:flex-row">
                 <input
                   type="text"
@@ -36,7 +36,7 @@ const UserManage = () => {
                 </select>
               </div>
 
-              <button className="btn h-full max-w-sm bg-blue-500 border-0">
+              <button className="btn max-w-sm bg-blue-500 border-0">
                 Apply Filter
               </button>
             </div>
